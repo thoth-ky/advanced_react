@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node"
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "webpack": "webpack -wd"
   },
   "babel": {
     "presets": [
@@ -22,16 +23,22 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
+    "babel-loader": "7",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "pm2": "^3.2.9"
+    "pm2": "^3.2.9",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "webpack": "^4.29.3"
   }
 }
